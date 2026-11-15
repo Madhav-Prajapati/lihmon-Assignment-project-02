@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIHMON | Natural Deodorant Powered by Lemon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Forum&display=swap"
+    rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 1. ANNOUNCEMENT BAR -->
+  <div class="bg-ink text-white">
+    <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 md:h-11">
+      <button id="annPrev" aria-label="Previous announcement" class="p-2">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+      <a id="annText" href="#newsletter" class="flex items-center gap-2 font-serif text-base tracking-wider md:text-sm">
+        <span id="annLabel">SUBSCRIBE AND SAVE 15%</span>
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <polyline points="14 6 20 12 14 18" />
+        </svg>
+      </a>
+      <button id="annNext" aria-label="Next announcement" class="p-2">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- 2. HEADER -->
+  <header class="sticky top-0 z-30 border-b border-black/5 bg-cream">
+    <div class="mx-auto grid h-[70px] max-w-7xl grid-cols-3 items-center px-4 md:px-8">
+      <button aria-label="Menu" class="justify-self-start p-2 md:hidden">
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+          stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+      <nav class="hidden gap-8 font-sans text-sm tracking-wide md:flex">
+        <a href="#shop" class="hover:opacity-60">SHOP</a>
+        <a href="#learn" class="hover:opacity-60">LEARN MORE</a>
+        <a href="#faq" class="hover:opacity-60">FAQ</a>
+      </nav>
+      <a href="#" class="justify-self-center">
+        <img src="./public/imgi_34_Frame_136_142f1113-0a32-48ed-a3a9-b73849e930e2.png" alt="LIHMON"
+          class="h-9 w-auto md:h-10">
+      </a>
+      <button aria-label="Cart" class="justify-self-end p-1">
+        <img src="./public/download (6).svg" alt="" class="h-11 w-11">
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 3 + 4. HERO (desktop: full-width image, text right half me upar | mobile: image upar, text neeche) -->
+    <div class="relative">
+
+      <!-- HERO IMAGE: desktop pe web image, mobile pe mob image -->
+      <picture>
+        <source media="(min-width:768px)" srcset="./public/imgi_4_1_web_new_new_new.jpg">
+        <img src="./public/imgi_57_1_mob_b98ecdbe-2cc0-4edc-96cf-d4c34651d471.jpg"
+          alt="Lihmon Citrus Breeze natural deodorant with lemons" class="block w-full">
+      </picture>
+
+      <!-- HERO TEXT -->
+      <section id="shop"
+        class="px-5 pb-14 pt-14 text-center md:absolute md:inset-y-0 md:right-0 md:flex md:w-1/2 md:flex-col md:items-center md:justify-center md:p-12">
+        <h1
+          class="mx-auto max-w-[17rem] font-serif text-[2.7rem] uppercase leading-[1.12] tracking-wide md:max-w-md md:text-[3.4rem]">
+          Natural deodorant powered by lemon
+        </h1>
+        <p class="mx-auto mt-6 max-w-[19rem] text-base leading-8 tracking-wider text-black/75 md:max-w-md">
+          ENGINEERED FOR THE ATHLETE, EMBRACED BY NATURE
+        </p>
+        <a href="#product"
+          class="mx-auto mt-9 block w-full max-w-md rounded-xl bg-ink py-4 font-serif text-lg tracking-[0.2em] text-white transition hover:bg-black">BUY
+          NOW</a>
+      </section>
+
+    </div>
+    <!-- 5. FEATURES (mobile: 2x2 | desktop: 4 columns) -->
+    <section id="learn" class="px-4 py-16 md:px-10 md:py-20">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-x-3 gap-y-14 text-center md:grid-cols-4 md:gap-x-8">
+        <article>
+          <svg class="mx-auto h-20 w-20 md:h-24 md:w-24" viewBox="0 0 64 64" fill="none" stroke="#d8c126" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="23"/><circle cx="32" cy="32" r="18"/><line x1="32" y1="32" x2="49.0" y2="32.0"/><line x1="32" y1="32" x2="46.7" y2="40.5"/><line x1="32" y1="32" x2="40.5" y2="46.7"/><line x1="32" y1="32" x2="32.0" y2="49.0"/><line x1="32" y1="32" x2="23.5" y2="46.7"/><line x1="32" y1="32" x2="17.3" y2="40.5"/><line x1="32" y1="32" x2="15.0" y2="32.0"/><line x1="32" y1="32" x2="17.3" y2="23.5"/><line x1="32" y1="32" x2="23.5" y2="17.3"/><line x1="32" y1="32" x2="32.0" y2="15.0"/><line x1="32" y1="32" x2="40.5" y2="17.3"/><line x1="32" y1="32" x2="46.7" y2="23.5"/><circle cx="32" cy="32" r="2.5"/></svg>
+          <h3 class="mt-5 font-serif text-[1.65rem] uppercase leading-tight md:text-3xl">Powered<br>by lemon</h3>
+          <p class="mt-4 text-[15px] leading-6 md:text-base">Infused with upcycled lemon fruit water and peel oil — nature’s own purifier and refresher</p>
+        </article>
+        <article>
+          <svg class="mx-auto h-20 w-20 md:h-24 md:w-24" viewBox="0 0 64 64" fill="none" stroke="#d8c126" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="29" y="8" width="9" height="12" rx="4.5"/><rect x="27" y="20" width="13" height="4"/><rect x="22" y="28" width="23" height="28" rx="2"/><path d="M33.5 49c-5-2-5-8-1-10 1 4 3 4 6 4-1 3-2 5-5 6z"/><path d="M16 22c0 3 2 4 2 6 0 2-4 2-4 0 0-2 2-3 2-6z" transform="translate(1 -2)"/></svg>
+          <h3 class="mt-5 font-serif text-[1.65rem] uppercase leading-tight md:text-3xl">Natural<br>ingredients</h3>
+          <p class="mt-4 text-[15px] leading-6 md:text-base">No aluminum. No parabens. No synthetics. Just plant-based, skin-loving simplicity</p>
+        </article>
+        <article>
+          <svg class="mx-auto h-20 w-20 md:h-24 md:w-24" viewBox="0 0 64 64" fill="none" stroke="#d8c126" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 58C31 44 32 28 33 14"/><path d="M32 22c-8-2-12-8-12-12 8 0 13 5 12 12z"/><path d="M33 18c6-2 10-7 10-12-7 1-11 6-10 12z"/><path d="M32 40c-8 0-14-5-15-11 8 0 14 4 15 11z"/><path d="M32.5 36c7 0 13-5 14-11-8 0-13 5-14 11z"/></svg>
+          <h3 class="mt-5 font-serif text-[1.65rem] uppercase leading-tight md:text-3xl">Plant<br>based</h3>
+          <p class="mt-4 text-[15px] leading-6 md:text-base">Aloe and citric acid work in harmony to calm, protect, and restore balance — naturally</p>
+        </article>
+        <article>
+          <svg class="mx-auto h-20 w-20 md:h-24 md:w-24" viewBox="0 0 64 64" fill="none" stroke="#d8c126" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M35.3 14.3 A19 19 0 0 1 50.9 34.7"/><polyline points="47.8,29.6 50.9,34.7 54.9,30.2"/><path d="M46.6 45.2 A19 19 0 0 1 21.1 48.6"/><polyline points="27.1,48.4 21.1,48.6 23.0,54.3"/><path d="M14.1 39.5 A19 19 0 0 1 24.0 15.8"/><polyline points="21.1,21.1 24.0,15.8 18.1,14.6"/></svg>
+          <h3 class="mt-5 font-serif text-[1.65rem] uppercase leading-tight md:text-3xl">Sustainably<br>made</h3>
+          <p class="mt-4 text-[15px] leading-6 md:text-base">From ingredient sourcing to packaging, every detail reflects our respect for the planet</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. BANNER (model + product) -->
+    <section>
+      <picture>
+        <source media="(min-width:768px)" srcset="./public/imgi_8_5_web_new_new_new.jpg">
+        <img src="./public/imgi_87_5_mob_new_new_new.jpg"
+          alt="Nature’s cleanest protection — dries instantly, leaves no trace, and works all day" class="w-full">
+      </picture>
+    </section>
+
+    <!-- 7. PRODUCT: SLIDER + DETAILS -->
+    <section id="product"
+      class="mx-auto max-w-6xl px-4 pb-14 pt-4 md:grid md:grid-cols-2 md:items-center md:gap-12 md:px-10 md:pt-16">
+      <div>
+        <div id="slider" class="no-scrollbar flex snap-x snap-mandatory overflow-x-auto rounded-xl">
+          <img src="./public/imgi_15_22.jpg" alt="Lihmon deodorant on wood with lemon"
+          class="w-full shrink-0 snap-center object-cover">
+          <img src="./public/imgi_13_11.jpg" alt="Lihmon deodorant held by model"
+          class="w-full shrink-0 snap-center object-cover">
+          <img src="./public/imgi_14_33.jpg" alt="Lihmon deodorant on tennis racket"
+            class="w-full shrink-0 snap-center object-cover">
+          <img src="./public/imgi_16_44.jpg" alt="Lihmon deodorant in a bag of lemons"
+            class="w-full shrink-0 snap-center object-cover">
+        </div>
+        <div class="my-5 flex items-center justify-center gap-5 text-sm">
+          <button id="slPrev" aria-label="Previous image" class="p-2"><svg class="h-4 w-4" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg></button>
+          <span id="slCount" class="font-serif tracking-widest">1 / 4</span>
+          <button id="slNext" aria-label="Next image" class="p-2"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg></button>
+        </div>
+      </div>
+
+      <div class="mt-6 md:mt-0">
+        <h2 class="font-serif text-3xl uppercase tracking-wide md:text-4xl">Citrus Breeze</h2>
+        <p class="mt-5 text-[15px] leading-6">Clean ingredients. Clear purpose. Formulated with lemon fruit water, pure
+          lemon peel oil, aloe leaf juice powder, organic sugar cane alcohol, and organic citric acid — every ingredient
+          is clean, purposeful, and kind to your skin.</p>
+        <p class="mt-5 text-[15px] leading-6">A light citrus mist that refreshes, balances, and protects — naturally. No
+          aluminum. No parabens. No compromise. 🍋</p>
+
+        <p class="mt-5 text-xs tracking-widest text-black/70">QUANTITY</p>
+        <div class="mt-2 flex h-14 items-center justify-between rounded-lg border border-black/50 px-5">
+          <button id="qMinus" aria-label="Decrease quantity" class="p-2"><img src="./public/download (11).svg" alt=""
+              class="h-3"></button>
+          <span id="qVal" class="text-base">1</span>
+          <button id="qPlus" aria-label="Increase quantity" class="p-2">
+            <svg class="h-3 w-3" viewBox="0 0 12 12" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+              <line x1="6" y1="1" x2="6" y2="11" />
+              <line x1="1" y1="6" x2="11" y2="6" />
+            </svg>
+          </button>
+        </div>
+
+        <button
+          class="mt-5 h-14 w-full rounded-xl bg-black font-serif text-lg tracking-[0.2em] text-white transition hover:bg-ink">BUY
+          NOW</button>
+
+        <a href="#" class="mt-5 inline-flex items-center gap-3 text-sm tracking-widest">
+          VIEW FULL DETAILS
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <polyline points="14 6 20 12 14 18" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- 8. INGREDIENTS -->
+    <section class="mt-4">
+      <h2 class="sr-only">Organic ingredients that keep you fresh all day</h2>
+      <picture>
+        <source media="(min-width:768px)"
+          srcset="./public/imgi_17_ingredients_new_new_new_dd1e8edf-3a61-458c-8d3b-64b7a8fe5d3f.jpg">
+        <img src="./public/imgi_112_ingredients_mob_new_new_new.jpg"
+          alt="Lemon fruit water, lemon peel oil, aloe leaf juice powder, aqua, organic citric acid, sugar cane alcohol"
+          class="w-full">
+      </picture>
+    </section>
+
+    <!-- 9. HOW IT WORKS -->
+    <section>
+      <picture>
+        <source media="(min-width:768px)"
+          srcset="./public/imgi_124_3_web_new_new_new_e1fd28d4-0903-4b78-ac64-3960b102aa00.jpg">
+        <img src="./public/imgi_126_3_mob_new_new_new_7c5f2450-d65d-4fdf-ba05-7144e993f6c0.jpg"
+          alt="How Lihmón works — naturally" class="w-full">
+      </picture>
+    </section>
+
+    <!-- 10. PRODUCT SHOT -->
+    <section class="px-0">
+      <img src="./public/imgi_15_22.jpg" alt="Lihmon Citrus Breeze natural deodorant"
+        class="mx-auto aspect-square w-full max-w-3xl object-cover">
+    </section>
+
+    <!-- 11. FAQ -->
+    <section id="faq" class="mx-auto max-w-3xl px-4 py-14 md:px-6">
+      <h2 class="text-center font-serif text-[1.9rem] uppercase leading-tight tracking-wide md:text-4xl">You might still
+        be wondering…</h2>
+      <div class="mt-10 border-t border-black/10">
+
+        <details class="group border-b border-black/10 py-5" open>
+          <summary class="flex cursor-pointer items-center justify-between gap-4 text-[15px] uppercase tracking-wide">
+            Fun fact about our formulation:
+            <svg class="chev h-4 w-4 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 15 12 9 18 15" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-[15px] leading-6">1/3 of our formula is made of upcycled lemons. We harness the natural
+            antibacterial and odor-neutralizing power of lemons, giving new life to what would otherwise be discarded.
+          </p>
+        </details>
+
+        <details class="group border-b border-black/10 py-5" open>
+          <summary class="flex cursor-pointer items-center justify-between gap-4 text-[15px] uppercase tracking-wide">
+            What makes Lihmon different from other natural deodorants?
+            <svg class="chev h-4 w-4 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 15 12 9 18 15" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-[15px] leading-6">Unlike many natural deodorants that struggle with effectiveness, Lihmon
+            took two years of rigorous testing to perfect. Our formula blends the power of lemon water with carefully
+            chosen organic ingredients to neutralize odor, keep you feeling fresh, and nourish your skin—all without
+            harsh chemicals or baking soda.</p>
+        </details>
+
+        <details class="group border-b border-black/10 py-5" open>
+          <summary class="flex cursor-pointer items-center justify-between gap-4 text-[15px] uppercase tracking-wide">
+            Will Lihmon work for an active lifestyle?
+            <svg class="chev h-4 w-4 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 15 12 9 18 15" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-[15px] leading-6">Absolutely! Lihmon was designed for people who move—whether you’re
+            hitting the gym, flowing through yoga, or running errands. It’s sweat-tested and performance-proven to keep
+            up with your most active days.</p>
+        </details>
+
+        <details class="group border-b border-black/10 py-5" open>
+          <summary class="flex cursor-pointer items-center justify-between gap-4 text-[15px] uppercase tracking-wide">
+            Is Lihmon safe for sensitive skin?
+            <svg class="chev h-4 w-4 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 15 12 9 18 15" />
+            </svg>
+          </summary>
+          <p class="mt-4 text-[15px] leading-6">Yes! We formulated Lihmon with gentle, skin-loving ingredients. Unlike
+            many deodorants that use baking soda (which can cause irritation), our lemon-powered formula is pH-balanced
+            and free from harsh additives, making it perfect for sensitive skin.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 12. NEWSLETTER -->
+    <section id="newsletter" class="relative">
+      <picture>
+        <source media="(min-width:768px)" srcset="./public/imgi_174_email_dee93f24-3c64-4584-8ef8-ea9e25e5685e.jpg">
+        <img src="./public/imgi_175_6_mob_2d3f2d96-a2cb-4792-99bd-44d8d4a9ce6f.jpg" alt=""
+          class="h-[640px] w-full object-cover md:h-auto">
+      </picture>
+      <div
+        class="absolute inset-x-[7%] inset-y-[17%] flex flex-col items-center justify-center px-5 text-center md:inset-x-[24%] md:inset-y-[23%] md:px-10">
+        <h2 class="font-serif text-[1.65rem] uppercase leading-tight tracking-wide md:text-3xl">Join the Lihmon
+          lifestyle – sign up for updates!</h2>
+        <p class="mt-5 text-[15px] leading-6 md:text-sm md:leading-6">Discover the Power of Nature! Embrace confidence
+          and sustainability with our organic deodorant. Elevate your routine and enjoy freshness like never before.
+          Join us for exclusive offers— your journey to freshness starts here!</p>
+        <form id="nlForm" class="mt-6 flex h-14 w-full max-w-sm items-center rounded-lg bg-black pl-5 pr-3 md:h-12">
+          <input type="email" required placeholder="Email" aria-label="Email"
+            class="min-w-0 flex-1 bg-transparent text-lg text-white placeholder-white/80 outline-none md:text-base">
+          <button aria-label="Subscribe" class="p-2 text-white">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <polyline points="14 6 20 12 14 18" />
+            </svg>
+          </button>
+        </form>
+        <p id="nlMsg" class="mt-3 hidden text-sm text-black/70">Thanks for subscribing!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 13. FOOTER -->
+  <footer class="bg-sun px-4 pb-6 pt-8">
+    <div class="mx-auto max-w-6xl">
+      <div class="grid grid-cols-2 gap-x-6 text-[15px] tracking-wide">
+        <ul class="space-y-4">
+          <li><a href="#shop" class="hover:opacity-60">SHOP</a></li>
+          <li><a href="#learn" class="hover:opacity-60">LEARN MORE</a></li>
+          <li><a href="#" class="hover:opacity-60">CONTACT US</a></li>
+        </ul>
+        <ul class="space-y-4">
+          <li><a href="#" class="hover:opacity-60">TERMS &amp; CONDITIONS</a></li>
+          <li><a href="#" class="hover:opacity-60">PRIVACY POLICY</a></li>
+        </ul>
+      </div>
+
+      <div class="mt-10 grid grid-cols-2 items-end gap-x-6">
+        <img src="./public/imgi_34_Frame_136_142f1113-0a32-48ed-a3a9-b73849e930e2.png" alt="LIHMON"
+          class="h-16 w-auto justify-self-start">
+        <div class="flex gap-4 pb-1">
+          <a href="#" aria-label="Instagram"><img src="./public/download (8).svg" alt="" class="h-6 w-6"></a>
+          <a href="#" aria-label="TikTok"><img src="./public/download (7).svg" alt="" class="h-6 w-6"></a>
+        </div>
+      </div>
+
+      <p class="mt-8 text-center text-sm tracking-wide">© 2026, LIHMON &nbsp; Powered by Shopify</p>
+    </div>
+  </footer>
+
+  <!-- "GET 10% OFF" floating pill -->
+  <div id="promo"
+    class="fixed bottom-5 left-4 z-40 flex items-center gap-4 rounded-xl bg-ink px-5 py-3 font-serif text-white shadow-lg">
+    <span>GET 10% OFF</span>
+    <button id="promoClose" aria-label="Close" class="text-lg leading-none">×</button>
+  </div>
+
+  <script>
+    // Announcement bar
+    const msgs = ["SUBSCRIBE AND SAVE 15%", "FREE SHIPPING ON ORDERS OVER $50", "SWEAT-TESTED. LEMON-POWERED."];
+    let ai = 0; const annLabel = document.getElementById('annLabel');
+    const showAnn = d => { ai = (ai + d + msgs.length) % msgs.length; annLabel.textContent = msgs[ai]; };
+    document.getElementById('annPrev').onclick = () => showAnn(-1);
+    document.getElementById('annNext').onclick = () => showAnn(1);
+    setInterval(() => showAnn(1), 5000);
+
+    // Product image slider
+    const slider = document.getElementById('slider');
+    const total = slider.children.length;
+    const count = document.getElementById('slCount');
+    const idx = () => Math.round(slider.scrollLeft / slider.clientWidth);
+    const go = i => slider.scrollTo({ left: ((i + total) % total) * slider.clientWidth, behavior: 'smooth' });
+    document.getElementById('slPrev').onclick = () => go(idx() - 1);
+    document.getElementById('slNext').onclick = () => go(idx() + 1);
+    slider.addEventListener('scroll', () => { count.textContent = (idx() + 1) + ' / ' + total; });
+
+    // Quantity
+    const q = document.getElementById('qVal');
+    document.getElementById('qMinus').onclick = () => { q.textContent = Math.max(1, +q.textContent - 1); };
+    document.getElementById('qPlus').onclick = () => { q.textContent = +q.textContent + 1; };
+
+    // Newsletter
+    document.getElementById('nlForm').addEventListener('submit', e => {
+      e.preventDefault(); e.target.reset();
+      document.getElementById('nlMsg').classList.remove('hidden');
+    });
+
+    // Promo pill
+    document.getElementById('promoClose').onclick = () => document.getElementById('promo').remove();
+  </script>
+</body>
+
+</html>
